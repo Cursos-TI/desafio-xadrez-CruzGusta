@@ -6,7 +6,7 @@
 
 int main() {
     //declaração de variaveis
-    int bispo = 1,torre = 1, rainha = 1;
+    int bispo = 1,torre = 1, rainha = 1, cavalo = 1;
 
     //do-while da peça rainha
     do{
@@ -28,18 +28,21 @@ printf("\n");//pula linha
        while(bispo <= 5)
        {
         
-        printf(" Bispo ");
         bispo++;  //adiciona movimento para mais uma casa
-        printf(": diagonal direita \n");
-
+        printf("Bispo : diagonal direita \n");
        }
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+        // Nível Aventureiro - Movimentação do Cavalo
+    while(cavalo <= 1){ // executa o loop externo enquanto o cavalo for <= a 1
+        printf("\n");
+         cavalo++; // aumenta o numero da variavel para não ter loop infinito
+        for(int i = 1; i <= 2; i++){ // enquanto o i for menor que 2(numero de repetição), no caso 2 vezes
+            printf("Cavalo : baixo\n"); //ele vai andar 2 casas
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
-
-    // Nível Aventureiro - Movimentação do Cavalo
+        }
+       
+        printf("Cavalo : esquerda \n");// cavalo finaliza o movimento para esquerda
+    }
+        
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
 
